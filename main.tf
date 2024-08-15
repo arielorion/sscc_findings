@@ -119,6 +119,14 @@ resource "google_scc_notification_config" "scc_notification" {
 resource "google_secret_manager_secret" "secret-scc" {
   project   = var.project_id
   secret_id = var.secret_id
+
+  labels = {
+    label = "scc"
+  }
+  replication {
+    auto {}
+  }
+
 }
 
 resource "google_secret_manager_secret_version" "secret-scc" {
