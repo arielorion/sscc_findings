@@ -16,8 +16,8 @@
 
 const url = require('url');
 const https = require('https');
-const org_id = process.env.org_id;
-const scc_url = `https://console.cloud.google.com/security/command-center/overview?organizationId=${org_id}`
+const project_id = process.env.project_id;
+const scc_url = `https://console.cloud.google.com/security/command-center/overview?project=${project_id}`
 
 function postMessage(message, callback) {
     'use strict';
