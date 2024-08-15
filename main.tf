@@ -71,7 +71,7 @@ resource "google_cloudfunctions_function" "function" {
 
   environment_variables = {
      project_id = var.project_id
-     webhook_url= var.webhook_url
+    #  webhook_url= var.webhook_url
 
   }
 
@@ -114,7 +114,8 @@ resource "google_scc_project_notification_config" "custom_notification_config" {
   pubsub_topic          = google_pubsub_topic.scc_topic.id
 
   streaming_config {
-    filter              = var.notification_filter
+    filter              = "(severity=\"HIGH\" OR severity=\"CRITICAL\") AND state=\"ACTIVE\""
+/*     filter              =var.notification_filter */
   }
 }
 

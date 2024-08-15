@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-/* const url = require('url');
+const url = require('url');
 const https = require('https');
 const project_id = process.env.project_id;
 const scc_url = `https://console.cloud.google.com/security/command-center/overview?project=${project_id}`
@@ -153,8 +153,8 @@ exports.SCCPubSub = (pubsubMessage, _context, callback) => {
     'use strict';
     const event = Buffer.from(pubsubMessage.data, 'base64').toString();
     processEvent(event, callback);
-}; */
-const url = require('url');
+};
+/* const url = require('url');
 const https = require('https');
 
 function postMessage(message, callback) {
@@ -299,4 +299,4 @@ exports.helloPubSub = (pubsubMessage, _context, callback) => {
     'use strict';
     const event = Buffer.from(pubsubMessage.data, 'base64').toString();
     processEvent(event, callback);
-};
+}; */
