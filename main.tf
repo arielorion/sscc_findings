@@ -71,6 +71,8 @@ resource "google_cloudfunctions_function" "function" {
 
   environment_variables = {
      project_id = var.project_id
+     webhook_url= var.webhook_url
+
   }
 
   secret_environment_variables {

@@ -97,3 +97,9 @@ variable secret_data {
   type = string
   sensitive = true
 }
+
+variable webhook_url {
+  description = "Value of web_hook.  Will be prompted to enter during Apply."
+  type = string
+  sensitive = true
+}
