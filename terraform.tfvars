@@ -13,4 +13,3 @@ scc_notification_description    = "My Custom Cloud Security Command Center Findi
 secret_id                       = "scc-gchat"
 org_id                          = "solucionesorion.com"
 project_id                      = "test-preventas"
-webhook_url                     = "https://chat.googleapis.com/v1/spaces/AAAARjgoHAI/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=WYbBD6VD9OEmZh6goOLyM6vHTjO8j0aNrhyZ4aJ7hbQ"
