@@ -102,7 +102,7 @@ resource "google_pubsub_topic" "scc_topic" {
 resource "google_pubsub_topic_iam_member" "scc_topic_iam" {
   topic                 = google_pubsub_topic.scc_topic.name
   role                  = var.topic_iam_role
-  member                = "serviceAccount:${google_scc_notification_config.scc_notification.service_account}"
+  member                = "serviceAccount:${google_scc_project_notification_config.scc_notification.service_account}"
 }
 
 resource "google_scc_project_notification_config" "custom_notification_config" {
