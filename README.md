@@ -25,7 +25,7 @@ The Cloud Function is written in Node.js which will parse the Pub/Sub event and 
    - gcloud services enable secretmanager.googleapis.com
 4. Enable Security Command Center (UI)
 5. Node.js runtime >= 1.6
-6. Create a Google Chat Webhook - info can be found [here](https://developers.google.com/chat/how-tos/webhooks#create_a_webhook)
+6. Create a Google Chat Webhook - info can be found [here](https://developers.google.com/chat/how-tos/webhooks#create_a_webhook). The URL is a enviroment variable (sensisitive data) in terraform Cloud
 
 
 ## Usage

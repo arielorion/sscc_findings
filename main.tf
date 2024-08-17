@@ -114,7 +114,7 @@ resource "google_scc_project_notification_config" "custom_notification_config" {
   pubsub_topic          = google_pubsub_topic.scc_topic.id
 
   streaming_config {
-    filter              = "(severity=\"HIGH\" OR severity=\"CRITICAL\") AND state=\"ACTIVE\""
+    filter              = "(severity=\"HIGH\" OR severity=\"CRITICAL\" OR severity=\"MEDIUM\") AND state=\"ACTIVE\""
 /*     filter              =var.notification_filter */
   }
 }
